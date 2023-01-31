@@ -1,0 +1,236 @@
+.hero-container{
+    width:100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 70px;
+    margin-bottom: 70px;
+    overflow-x: hidden;
+}
+
+.hero-bg{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.hero-bg-1{
+    position: absolute;
+    transform:  translateX(-50%);
+}
+
+.hero-bg-2{
+    position: absolute;
+
+}
+
+.hero-header{
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    margin-top: 30px;
+}
+
+.hero-header-title{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+
+    letter-spacing: -0.444444px;
+
+    color: #FFFFFF;
+}
+
+.hero-header-icons{
+    z-index: 3;
+    margin-right: 15%;
+}
+
+.hero-info{
+    display: flex;
+}
+
+.hero-info-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+ 
+.hero-info-image{
+    background-color: #242424;
+    display: flex;
+    width: 445px;
+    transform:translateY(-61px) translateX(-170px);
+    z-index: 1;
+    height: 720px;
+    align-items: flex-end;
+}
+
+.adam{
+    object-fit: cover;
+    object-position: 100%;
+    height: 579px;
+}
+
+.hero-title{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    z-index: 2;
+
+    color: #FFFFFF;
+}
+
+b{
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #4EE1A0;
+}
+
+.hero-text{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    
+    color: #D9D9D9;
+    margin-bottom: 60px;
+}
+
+@media (max-width: 800px) {
+    .hero-container .hero-info{
+        width: 100%;
+    }
+    
+    .hero-info{
+        margin-top: 30px;
+    }
+
+    .hero-info-image{
+        transform: none;
+        top:0;
+        right: 0;
+        align-items:flex-end;
+        height: 600px;
+        width: 322px;
+        position: absolute;
+    }
+
+    .adam{
+        object-fit: contain;
+        overflow-x: hidden;
+        width: 355px;
+        height: auto;
+    }
+
+    .hero-bg{
+        top: 0;
+    }
+
+    .hero-bg-1{
+        right: 0;
+        transform: none;
+        width: 64.5px;
+        object-fit: none;
+        height: 129px;
+        object-position:0;
+    }
+
+    .hero-bg-2{
+        width: 225px;
+        object-fit:none;
+        height: 200px;
+        object-position: 100%;
+        top: 40px;
+
+    }
+
+    .hero-info-text{
+        width: 450px;
+        z-index: 2;
+        margin-bottom: 60px;
+    }
+
+    .hero-title{
+        font-size: 72px;
+        line-height: 72px;
+    }
+
+    .hero-header-icons{
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 400px){
+    .hero-info{
+        flex-direction: column-reverse;
+        overflow: visible;
+    }
+    .hero-info-image{
+        position: relative;
+        width: 174px;
+        height: 380px;
+        background: linear-gradient(180deg, rgba(36, 36, 36, 0.0001) 0.65%, #242424 100%);
+        align-self: center;
+        top: -120px;
+        overflow:visible;
+    }
+
+    .hero-bg-1{
+        left: 120%;
+        overflow: visible;
+        width: 129px;
+    }
+
+    .hero-bg-2{
+        top:100px;
+    }
+
+    .hero-info-text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin:-80px 0 80px;
+    }
+
+    .hero-title{
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-block-end: 4px;
+        margin-block-start: 0;
+    }
+
+    .hero-text{
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .hero-header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top:20px;
+    }
+
+    .hero-header-title{
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .hero-header-icons{
+        transform: scale(85%);
+    }
+}
